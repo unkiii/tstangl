@@ -11,6 +11,4 @@ export class AppComponent implements OnInit{
     throw new Error("Method not implemented.");
   }
   title = 'nprojangucnt';
-
 }
-
