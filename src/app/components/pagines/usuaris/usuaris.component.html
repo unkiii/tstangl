@@ -1,9 +1,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 
-<div class="fondoTop">
+<div class="row">
     <div *ngFor='let user of users'>
-        <img [src]="user.picture.medium">
-        <h2>{{ user.name.first | uppercase }}</h2>
-        <p>{{ user.email }}</p>
+        <div class="fondoTop">
+            <div class="col carta">
+                <div class="d-print-block border">
+                    <img [src]="user.picture.medium" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ user.name.first | uppercase }}</h4>
+                        <p class="card-text">{{ user.email }}</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
