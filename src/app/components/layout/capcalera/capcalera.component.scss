@@ -1,9 +1,47 @@
 // component css goes here
-.capcalera{
-    color: red;
+.capcalera {
     font-size: 15px;
+    background-color: white;
+    height: 68px;
 }
 
 .centrar {
     text-align: center;
+}
+
+.left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+img {
+    width: 80px;
+    height: 50px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 5px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -1px -1px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #cccbcb;
 }

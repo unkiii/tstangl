@@ -5,11 +5,13 @@ import {CarouselModule} from "ngx-carousel-lib";
 
 // This Module's Components
 import { CapcaleraComponent } from './capcalera.component';
+import { LmenuModule } from '../lmenu/lmenu.module';
 
 
 @NgModule({
     imports: [
-        CarouselModule
+        CarouselModule,
+        LmenuModule
         
     ],
     declarations: [

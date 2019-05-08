@@ -1,4 +1,18 @@
 // component css goes here
+#navega #menu #fijo {
+    position: fixed;
+    font-family: verdana, arial;
+    font-size: 11pt;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    /* margen con valores: arriba - derecha - abajo - izquierda */
+    top: 0px;
+    /* Distancia hasta el borde superior */
+    left: 0px;
+    /* Distancia hasta el borde izquierdo */
+    width: 100%;
+}
+
 .menu {
     margin: auto;
     width: 50%;
@@ -20,12 +34,12 @@
     display: inline-block;
     font-size: 16px;
     margin: -1px -1px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #cccbcb;
-  }
-  
+}
