@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from './components/pagines/user.service';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
   
 })
-export class AppComponent implements OnInit{
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
-  }
-  title = 'nprojangucnt';
+export class AppComponent {
+  
 }
