@@ -14,12 +14,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './components/pagines/user.service';
 import { UsuarisComponent } from './components/pagines/usuaris/usuaris.component';
 import { UsuarisModule } from './components/pagines/usuaris/usuaris.module';
+import { ListarComponent } from './components/pagines/Persona/listar/listar.component';
+import { AddComponent } from './components/pagines/Persona/add/add.component';
+import { EditComponent } from './components/pagines/Persona/edit/edit.component';
+import {ServiceService} from '../app/Service/service.service';
+import { UsuariscrudModule } from './components/pagines/usuariscrud/usuariscrud.module';
+import { CommonModule } from "@angular/common";
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,9 +38,12 @@ import { UsuarisModule } from './components/pagines/usuaris/usuaris.module';
     PeuModule,
     HttpClientModule,
     FormsModule,
-    UsuarisModule
+    UsuarisModule,
+    UsuariscrudModule,
+    CommonModule,
+    
   ],
-  providers: [UserService],
+  providers: [ServiceService, UserService],
   bootstrap: [AppComponent]
 })
 

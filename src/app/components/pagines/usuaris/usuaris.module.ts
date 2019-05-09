@@ -21,7 +21,7 @@ import { BrowserModule } from '@angular/platform-browser';
     providers: [UserService]
 })
 export class UsuarisModule {
-    constructor(){
+    constructor() {
   
     }
 }
