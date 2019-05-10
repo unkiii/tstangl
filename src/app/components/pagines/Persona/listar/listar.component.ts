@@ -10,7 +10,7 @@ import { Persona } from 'src/app/Modelo/Persona';
 })
 export class ListarComponent implements OnInit {
 
-  personas:Persona[];
+  personas:Array<Persona>=[];
   constructor(private service:ServiceService, private router:Router) { }
 
   ngOnInit() {

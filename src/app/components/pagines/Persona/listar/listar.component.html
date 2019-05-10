@@ -2,9 +2,12 @@
     <div class="card">
         <div class="card-header">
             <h3>Personas</h3>
+            <button class="btn" routerLink="/listar" routerLinkActive="active">List</button>
+            <button class="btn" routerLink="/add" routerLinkActive="active">Add</button>
+
         </div>
         <div class="card-body">
-            <table class="table table-hover">
+            <table class="table table-dark">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -14,7 +17,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngfor="let users of user" class="center">
+                    <tr *ngFor="let users of personas" class="center">
                         <td>{{ users.id }}</td>
                         <td>{{ users.name }}</td>
                         <td>{{ users.apellidos }}</td>
