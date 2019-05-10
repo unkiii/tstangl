@@ -20,6 +20,9 @@ export class AppComponent {
   Editar(){
       this.router.navigate(["edit"]);
   }
+  Guardar(){
+    this.router.navigate(["guardar"]);
+  }
 }
 
 

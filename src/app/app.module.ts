@@ -35,7 +35,8 @@ import { BrowserModule } from '@angular/platform-browser';
     CosModule,
     PeuModule,
     UsuarisModule,
-    UsuariscrudModule,    
+    UsuariscrudModule,
+      
   ],
   providers: [ServiceService, UserService],
   bootstrap: [AppComponent]

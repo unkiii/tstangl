@@ -11,6 +11,8 @@ import { EditComponent } from '../Persona/edit/edit.component';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @NgModule({
     imports: [
@@ -18,12 +20,14 @@ import { FormsModule } from '@angular/forms';
         CommonModule,
         BrowserModule,
         FormsModule,
+        MatMenuModule,
+        AppRoutingModule
     ],
     declarations: [
         UsuariscrudComponent,
         ListarComponent,
         AddComponent,
-        EditComponent,        
+        EditComponent,       
     ],
     exports: [
         UsuariscrudComponent,

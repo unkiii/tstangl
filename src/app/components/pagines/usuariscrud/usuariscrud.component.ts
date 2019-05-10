@@ -19,4 +19,7 @@ export class UsuariscrudComponent {
     Editar(){
         this.router.navigate(["edit"]);
     }
+    Guardar(){
+        this.router.navigate(["guardar"]);
+      }
 }
