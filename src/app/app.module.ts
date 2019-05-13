@@ -10,7 +10,7 @@ import { PeuModule } from './components/layout/peu/peu.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserService } from './components/pagines/user.service';
 import { UsuarisModule } from './components/pagines/usuaris/usuaris.module';
-import {ServiceService} from '../app/Service/service.service';
+import { ServiceService } from "../app/Service/ServiceService";
 import { UsuariscrudModule } from './components/pagines/usuariscrud/usuariscrud.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 // This Module's Components
 import { UsuariscrudComponent } from './usuariscrud.component';
-import { ServiceService } from 'src/app/Service/service.service';
+import { ServiceService } from "src/app/Service/ServiceService";
 import { HttpClientModule } from '@angular/common/http';
 import { ListarComponent } from '../Persona/listar/listar.component';
 import { AddComponent } from '../Persona/add/add.component';

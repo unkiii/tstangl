@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from 'src/app/Service/service.service';
+import { ServiceService } from "src/app/Service/ServiceService";
 import { Router } from '@angular/router';
 import { Persona } from "src/app/Modelo/Persona";
 
@@ -21,5 +21,12 @@ export class ListarComponent implements OnInit {
       this.personas=data;
     })
   }
+
+  Editar(persona:Persona):void{
+    localStorage.setItem("id", persona.id.toString());
+    this.router.navigate(["edit"]);
+  }
+
+
 
 }

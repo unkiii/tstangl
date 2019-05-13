@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ServiceService } from 'src/app/Service/service.service';
+import { ServiceService } from "src/app/Service/ServiceService";
 import { Persona } from "src/app/Modelo/Persona";
 
 @Component({
@@ -15,8 +15,14 @@ export class AddComponent implements OnInit {
   ngOnInit() {
   }
 
-  Guardar(persona:Persona){
-    this.service.createPersona(persona)
+    Guardar(sname, ssname){      
+      let perso: Persona = {
+        id: null,
+        name: sname,
+        apellidos: ssname
+      };
+
+    this.service.createPersona(perso)
     .subscribe(data=>{
       alert("Se Agrego con exito...!!!");
       this.router.navigate(["listar"]);
