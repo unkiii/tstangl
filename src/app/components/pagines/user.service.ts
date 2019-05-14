@@ -8,8 +8,7 @@ export class UserService {
 
   constructor(protected http: HttpClient) { }
 
-  getUsers() {
-    
+  getUsers() {    
     return this.http.get('https://randomuser.me/api/?results=25');
   }
 }

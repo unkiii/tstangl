@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { LoginModule } from './components/pagines/login/login.module';
 
 
 
@@ -36,7 +37,7 @@ import { BrowserModule } from '@angular/platform-browser';
     PeuModule,
     UsuarisModule,
     UsuariscrudModule,
-      
+    LoginModule,
   ],
   providers: [ServiceService, UserService],
   bootstrap: [AppComponent]
@@ -45,7 +46,7 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppModule { 
 
   constructor(){
-  
+    
   }
 
  }

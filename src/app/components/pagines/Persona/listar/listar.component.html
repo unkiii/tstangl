@@ -2,7 +2,7 @@
 <div class="container">
     <div class="card">
         <div class="card-body">
-            <table class="table table-dark">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -12,13 +12,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let users of personas" class="center">
-                        <td>{{ users.id }}</td>
-                        <td>{{ users.name }}</td>
-                        <td>{{ users.apellidos }}</td>
+                    <tr *ngFor="let user of personas" class="center">
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.apellidos }}</td>
                         <td>
-                            <button (click)="Editar(users)" class="btn btn-warning btn-sm">Editar</button>
-                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                            <button (click)="Editar(user)" class="btn btn-warning btn-sm">Editar</button>
+                            <button (click)="Delete(user)" class="btn btn-danger btn-sm">Eliminar</button>
                         </td>
                     </tr>
                 </tbody>

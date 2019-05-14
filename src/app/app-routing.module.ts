@@ -10,6 +10,7 @@ import { UsuariscrudComponent } from './components/pagines/usuariscrud/usuariscr
 import { ListarComponent } from './components/pagines/Persona/listar/listar.component';
 import { AddComponent } from './components/pagines/Persona/add/add.component';
 import { EditComponent } from './components/pagines/Persona/edit/edit.component';
+import { LoginComponent } from './components/pagines/login/login.component';
  
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   { path: 'listar', component: ListarComponent },
   { path: 'add', component: AddComponent },
   { path: 'edit', component: EditComponent },
+  { path: 'login', component: LoginComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

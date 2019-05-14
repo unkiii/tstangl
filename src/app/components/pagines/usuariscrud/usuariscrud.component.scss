@@ -1,8 +1,28 @@
-button {
-    margin: 10px;
+.contenidor {
     text-align: center;
 }
 
-.contenidor {
+.centrar {
     text-align: center;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: silver;
+    color: black;
+}
+
+.space {
+    padding: 5px;
 }

@@ -1,9 +1,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-<div class="fondoTop">
-    <capcalera></capcalera>
-    <lmenu></lmenu>
-    <router-outlet></router-outlet>
-
+<div *ngIf="login;else other_content">
+    <login></login>
 </div>
-
-<peu></peu>
+<ng-template #other_content>
+    <div class="fondoTop">
+        <capcalera></capcalera>
+        <lmenu></lmenu>
+        <router-outlet></router-outlet>
+        <peu></peu>
+    </div>
+</ng-template>

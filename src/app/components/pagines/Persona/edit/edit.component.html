@@ -7,15 +7,19 @@
         </div>
         <div class="card-body">
             <form action="">
-                <div class="form-group">
-                    <label for="">Nombre:</label>
-                    <input type="text" class="form-control" #fname>
+                <div class="id">
+                    <label for=" ">ID: &nbsp;</label>
+                    <input class="inId " type="text " disabled name="id " [(ngModel)]="persona.id " #fid>
                 </div>
-                <div class="form-group">
-                    <label for="">Apellido:</label>
-                    <input type="text" class="form-control" #fsname>
+                <div class="form-group ">
+                    <label for=" ">Nombre:</label>
+                    <input [(ngModel)]="persona.name " name="name " type="text " class="form-control " #fname>
                 </div>
-                <button (click)="Editar()" class="button btn-danger">Guardar</button>
+                <div class="form-group ">
+                    <label for=" ">Apellido:</label>
+                    <input [(ngModel)]="persona.apellidos " name="apellidos " type="text " class="form-control " #fsname>
+                </div>
+                <button (click)="Actualizar(fid. value, fname.value, fsname.value) " class="button btn-danger ">Actualizar</button>
             </form>
         </div>
     </div>

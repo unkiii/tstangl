@@ -5,10 +5,10 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-  
 })
 export class AppComponent {
-  
+  login:boolean = false;
+
   constructor(private router:Router){}
 
   Listar(){
@@ -24,5 +24,3 @@ export class AppComponent {
     this.router.navigate(["guardar"]);
   }
 }
-
-

@@ -22,7 +22,19 @@ export class EditComponent implements OnInit {
     this.service.getPersonaId(+id)
     .subscribe(data=>{
       this.persona=data;
-    });    
+    });
   }
 
+  Actualizar(sid, sname, ssname){  
+      let perso: Persona = {
+        id: sid,
+        name: sname,
+        apellidos: ssname
+      };
+      this.service.updatePersona(perso)
+      .subscribe(data=>{
+        alert("Se actualizacó con exito..");
+      this.router.navigate(["listar"]);
+      });
+  }
 }

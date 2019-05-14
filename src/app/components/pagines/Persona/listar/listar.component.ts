@@ -22,11 +22,19 @@ export class ListarComponent implements OnInit {
     })
   }
 
+  // Editar
   Editar(persona:Persona):void{
     localStorage.setItem("id", persona.id.toString());
     this.router.navigate(["edit"]);
   }
 
+// Delete
 
-
+Delete(persona:Persona):void{
+  this.service.deletePersona(persona)
+  .subscribe(data=>{
+    this.personas=this.personas.filter(p=>p!==persona);
+    alert("Usuario eliminado...");
+  })  
+}
 }
