@@ -1,46 +1,7 @@
-// component css goes here
-#navega #menu #fijo {
-    position: absolute;
-    font-family: verdana, arial;
-    font-size: 11pt;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
-    /* margen con valores: arriba - derecha - abajo - izquierda */
-    top: 0px;
-    /* Distancia hasta el borde superior */
-    left: 0px;
-    /* Distancia hasta el borde izquierdo */
-    width: 100%;
-}
-
-.menu {
-    margin: auto;
-    width: 50%;
-    border: 5px solid black;
-    padding: 10px;
-}
-
-.centrar {
+.center {
     text-align: center;
 }
 
-.button {
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-    color: black;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.button:hover {
-    background-color: silver;
-    color: black;
-}
-
-.space {
-    padding: 5px;
+.margin {
+    margin-left: 5px;
 }
